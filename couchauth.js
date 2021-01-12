@@ -2,6 +2,10 @@ const dbAdr = 'http//localhost:5984'
 
 
   export async function couch_login(credintials) {
+    //   credintials = {
+    //     "name": "root",
+    //     "password": "relax"
+    // }
     return await dbReqResp('POST', '/_session', credintials)
   }
   
